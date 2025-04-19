@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siivouspalvelu Moppinen - Ammattimainen siivous palvelut</title>
+    <title>Siivouspalvelu Moppinen - Ammattimainen siivouspalvelu</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="container">
             <h1>Siivouspalvelu Moppinen</h1>
@@ -15,6 +16,7 @@
         </div>
     </header>
 
+    <!-- Navigaatio -->
     <nav>
         <div class="container">
             <ul>
@@ -26,6 +28,7 @@
         </div>
     </nav>
 
+    <!-- Hero-osio -->
     <section id="hero">
         <div class="container">
             <h2>Siisteyttä elämääsi</h2>
@@ -34,6 +37,7 @@
         </div>
     </section>
 
+    <!-- Palvelut -->
     <section id="palvelut" class="section-light">
         <div class="container">
             <h2>Palvelumme</h2>
@@ -54,6 +58,7 @@
         </div>
     </section>
 
+    <!-- Hinnasto -->
     <section id="hinnasto" class="section-dark">
         <div class="container">
             <h2>Hinnasto</h2>
@@ -93,6 +98,7 @@
         </div>
     </section>
 
+    <!-- Meistä -->
     <section id="meista" class="section-light">
         <div class="container">
             <h2>Meistä</h2>
@@ -101,6 +107,7 @@
         </div>
     </section>
 
+    <!-- Yhteydenottolomake (PÄIVITETTY) -->
     <section id="yhteys" class="section-dark">
         <div class="container">
             <h2>Ota yhteyttä</h2>
@@ -113,7 +120,14 @@
                     <p><strong>Aukioloajat:</strong> Ma-Pe 8:00-18:00</p>
                 </div>
                 <div class="contact-form">
-                    <form action="mailto:siivouspalvelumoppinen@gmail.com" method="post" enctype="text/plain">
+                    <form action="https://formsubmit.co/siivouspalvelumoppinen@gmail.com" method="POST">
+                        <!-- FormSubmit-asetukset -->
+                        <input type="hidden" name="_subject" value="Uusi yhteydenottopyyntö - Siivouspalvelu Moppinen">
+                        <input type="hidden" name="_next" value="https://saidelmo.github.io/kiitos.html">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <!-- Lomakekentät -->
                         <div class="form-group">
                             <label for="name">Nimi</label>
                             <input type="text" id="name" name="name" required>
@@ -128,11 +142,11 @@
                         </div>
                         <div class="form-group">
                             <label for="service">Palvelu</label>
-                            <select id="service" name="service">
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Valitse palvelu</option>
                                 <option value="kotisiivous">Kotisiivous</option>
                                 <option value="yrityssiivous">Yrityssiivous</option>
                                 <option value="muuttosiivous">Muuttosiivous</option>
-                                <option value="muu">Muu</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -146,6 +160,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2023 Siivouspalvelu Moppinen. Kaikki oikeudet pidätetään.</p>
