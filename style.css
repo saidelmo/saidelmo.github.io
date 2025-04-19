@@ -1,10 +1,22 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #ffffff;
+  background-image: url('https://images.unsplash.com/photo-1581579185169-8c4f7b88f8e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: #1a1a1a;
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.88); /* Läpinäkyvä valkoinen kerros */
+  z-index: -1;
 }
 
 header {
@@ -90,26 +102,4 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
   font-size: 0.9rem;
-}
-
-/* Kuvagalleria */
-.gallery {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
-
-.gallery img {
-  width: 100%;
-  max-width: 280px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
 }
