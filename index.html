@@ -1,67 +1,155 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Siivouspalvelu Moppinen</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siivouspalvelu Moppinen - Ammattimainen siivous palvelut</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Siivouspalvelu Moppinen</h1>
-      <p>Kotimainen ja luotettava siivousalan yritys</p>
-    </div>
-  </header>
+    <header>
+        <div class="container">
+            <h1>Siivouspalvelu Moppinen</h1>
+            <p>Ammattimaiset siivouspalvelut kotisi ja yrityksellesi</p>
+        </div>
+    </header>
 
-  <section class="intro">
-    <div class="container">
-      <p>
-        Siivouspalvelu Moppinen on kotimainen, luotettava ja laadukas siivousalan yritys, joka tarjoaa yksilöllisiä ja asiakaslähtöisiä siivousratkaisuja koteihin, toimistoihin ja liiketiloihin.
-        Meille siivous ei ole vain työtä – se on ammattiylpeyettä, tarkkuutta ja aitoa halua helpottaa asiakkaidemme arkea. 🧽💪
-      </p>
-      <p>
-        Toimimme vastuullisesti ja kotimaisin voimin, työllistäen osaavia ammattilaisia, joille siisteys ja asiakastyytyväisyys ovat sydämen asioita. 💙
-      </p>
-    </div>
-  </section>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#palvelut">Palvelut</a></li>
+                <li><a href="#hinnasto">Hinnasto</a></li>
+                <li><a href="#meista">Meistä</a></li>
+                <li><a href="#yhteys">Ota yhteyttä</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <section class="services">
-    <div class="container">
-      <h2>Palvelut</h2>
-      <ul>
-        <li>Loppusiivous</li>
-        <li>Toimistosiivous</li>
-        <li>Viikottainen siivous</li>
-      </ul>
-    </div>
-  </section>
+    <section id="hero">
+        <div class="container">
+            <h2>Siisteyttä elämääsi</h2>
+            <p>Jätä siivous ammattilaisille - me huolehdimme puhtaudesta puolestasi</p>
+            <a href="#yhteys" class="btn">Pyydä tarjous</a>
+        </div>
+    </section>
 
-  <section class="pricing">
-    <div class="container">
-      <h2>Tarjous</h2>
-      <p>Tuntiveloitus: 45 €/h (sis. ALV 25 %)</p>
-      <p>Minimiveloitus: 3 tuntia ⏱</p>
-      <p>Kaikki sisältyy hintaan – ei piilokuluja! ✅</p>
-      <p><strong>Kotitalousvähennyksen jälkeen:</strong> Siivoojan tuntihinta: vain 18 €/h (sis. ALV 25 %)</p>
-    </div>
-  </section>
+    <section id="palvelut" class="section-light">
+        <div class="container">
+            <h2>Palvelumme</h2>
+            <div class="services-grid">
+                <div class="service">
+                    <h3>Kotisiivous</h3>
+                    <p>Perussiivous, syväsiivous ja säännöllinen siivous kotisi puhtaaksi ja kodikkaaksi.</p>
+                </div>
+                <div class="service">
+                    <h3>Yrityssiivous</h3>
+                    <p>Ammattimainen siivous toimistoille, liiketiloille ja muille yrityksille.</p>
+                </div>
+                <div class="service">
+                    <h3>Muuttosiivous</h3>
+                    <p>Laaja muuttosiivous, joka täyttää vuokranantajien vaatimukset.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section class="contact">
-    <div class="container">
-      <h2>Yhteystiedot</h2>
-      <p>Toimisto avoinna: Ma–Pe klo 10.00–17.00</p>
-      <p>Puhelin: 040 460 0950</p>
-      <p>Sähköposti: siivouspalvelumoppinen@gmail.com</p>
-    </div>
-  </section>
+    <section id="hinnasto" class="section-dark">
+        <div class="container">
+            <h2>Hinnasto</h2>
+            <div class="pricing">
+                <div class="price-card">
+                    <h3>Perussiivous</h3>
+                    <p class="price">45€/h</p>
+                    <ul>
+                        <li>Pölyjen pyyhintä</li>
+                        <li>Pintojen puhdistus</li>
+                        <li>Lattioiden moppaus/imurointi</li>
+                        <li>Kylpyhuoneen ja keittiön siivous</li>
+                    </ul>
+                </div>
+                <div class="price-card">
+                    <h3>Syväsiivous</h3>
+                    <p class="price">60€/h</p>
+                    <ul>
+                        <li>Kaikki perussiivouksen palvelut</li>
+                        <li>Laatikoiden ja kaappien siivous</li>
+                        <li>Uunin ja jääkaapin puhdistus</li>
+                        <li>Lasien ja ikkunoiden puhdistus</li>
+                    </ul>
+                </div>
+                <div class="price-card">
+                    <h3>Muuttosiivous</h3>
+                    <p class="price">80€/h</p>
+                    <ul>
+                        <li>Kaikki syväsiivouksen palvelut</li>
+                        <li>Seinien pesu</li>
+                        <li>Listojen puhdistus</li>
+                        <li>Vuokranantajan vaatimat siivoukset</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="note">Kaikki hinnat sisältävät ALV 24% ja tarvikkeet</p>
+        </div>
+    </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Siivouspalvelu Moppinen</p>
-    </div>
-  </footer>
+    <section id="meista" class="section-light">
+        <div class="container">
+            <h2>Meistä</h2>
+            <p>Siivouspalvelu Moppinen on luotettava ja ammattitaitoinen siivousyritys, joka tarjoaa laadukkaita siivouspalveluja sekä kodeille että yrityksille. Työskentelemme tarkkuudella ja intohimolla siivousta kohtaan, ja panostamme jokaiseen toimeksiantoon.</p>
+            <p>Tiimimme koostuu koulutetuista ja kokeneista siivoojista, jotka käyttävät vain laadukkaita ja ympäristöystävällisiä siivoustuotteita.</p>
+        </div>
+    </section>
+
+    <section id="yhteys" class="section-dark">
+        <div class="container">
+            <h2>Ota yhteyttä</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Yhteystiedot</h3>
+                    <p><strong>Puhelin:</strong> 040 460 0950</p>
+                    <p><strong>Sähköposti:</strong> siivouspalvelumoppinen@gmail.com</p>
+                    <p><strong>Toiminta-alue:</strong> Helsinki ja pääkaupunkiseutu</p>
+                    <p><strong>Aukioloajat:</strong> Ma-Pe 8:00-18:00</p>
+                </div>
+                <div class="contact-form">
+                    <form action="mailto:siivouspalvelumoppinen@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name">Nimi</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Sähköposti</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Puhelin</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Palvelu</label>
+                            <select id="service" name="service">
+                                <option value="kotisiivous">Kotisiivous</option>
+                                <option value="yrityssiivous">Yrityssiivous</option>
+                                <option value="muuttosiivous">Muuttosiivous</option>
+                                <option value="muu">Muu</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Viesti</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Lähetä viesti</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Siivouspalvelu Moppinen. Kaikki oikeudet pidätetään.</p>
+        </div>
+    </footer>
 </body>
 </html>
-
-
