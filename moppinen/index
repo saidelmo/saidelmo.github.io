@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Siivouspalvelu Moppinen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Siivouspalvelu Moppinen</h1>
+  <p>Puhtaasti kotimainen siivouspalvelu ✨</p>
+</header>
+
+<section>
+  <p>
+    Siivouspalvelu Moppinen on kotimainen, luotettava ja laadukas siivousalan yritys, joka tarjoaa yksilöllisiä ja asiakaslähtöisiä siivousratkaisuja koteihin, toimistoihin ja liiketiloihin.
+    Meille siivous ei ole vain työtä – se on ammattiylpeyettä, tarkkuutta ja aitoa halua helpottaa asiakkaidemme arkea. 🧽💪
+  </p>
+  <p>
+    Toimimme vastuullisesti ja kotimaisin voimin, työllistäen osaavia ammattilaisia, joille siisteys ja asiakastyytyväisyys ovat sydämen asioita. 💙
+  </p>
+  <p>
+    🧹 <strong>Tarjous: Loppusiivous</strong><br/>
+    Tuntiveloitus: 45 €/h (sis. ALV 25 %)<br/>
+    Minimiveloitus: 3 tuntia ⏱<br/>
+    Kaikki sisältyy hintaan – ei piilokuluja! ✅
+  </p>
+  <p>
+    💸 <strong>Kotitalousvähennyksen jälkeen:</strong><br/>
+    Siivoojan tuntihinta: vain 18 €/h (sis. ALV 25 %)
+  </p>
+  <p>
+    Me kuuntelemme asiakkaitamme. Mikäli loppusiivoukseen liittyy erityistoiveita tai kysymyksiä, räätälöimme palvelun juuri sinun tarpeidesi mukaan. 😇
+  </p>
+  <p>
+    📞 <strong>Yhteystiedot</strong><br/>
+    Toimisto avoinna: Ma–Pe klo 10.00–17.00<br/>
+    Puhelin: 040 460 0950<br/>
+    Sähköposti: <a href="mailto:siivouspalvelumoppinen@gmail.com">siivouspalvelumoppinen@gmail.com</a>
+  </p>
+</section>
+
+<section>
+  <h2>Palvelut</h2>
+  <ul>
+    <li>Loppusiivous</li>
+    <li>Toimistosiivous</li>
+    <li>Viikottainen siivous</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Hinnasto</h2>
+  <p><strong>Tuntiveloitus:</strong> 45 €/h (sis. ALV 25.5%)</p>
+</section>
+
+<section>
+  <h2>Yhteystiedot</h2>
+  <p>📞 040 460 0950</p>
+  <p>✉️ <a href="mailto:siivouspalvelumoppinen@gmail.com">siivouspalvelumoppinen@gmail.com</a></p>
+</section>
+
+<section>
+  <h2>Ota yhteyttä</h2>
+  <form action="#" method="POST">
+    <input type="text" name="name" placeholder="Nimesi" required />
+    <input type="email" name="email" placeholder="Sähköpostisi" required />
+    <textarea name="message" rows="5" placeholder="Viestisi" required></textarea>
+    <button type="submit">Lähetä viesti</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Siivouspalvelu Moppinen. Kaikki oikeudet pidätetään.
+</footer>
+
+</body>
+</html>
