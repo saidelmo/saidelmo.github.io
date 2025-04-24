@@ -2,30 +2,96 @@
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
-    <title>Nettisivujen ehostamista</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saidin nettisivu</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        .top-left-link {
-            position: absolute;
-            top: 10px;
-            left: 10px;
+        /* Basic layout styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            min-height: 100vh;
+            grid-template-rows: auto auto 1fr auto;
+        }
+        
+        #header {
+            background-color: #4a6fa5;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        #nav {
+            background-color: #333;
+            padding: 0.5rem;
+        }
+        
+        #nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        #nav li {
+            margin: 0 1rem;
+        }
+        
+        #nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        
+        #nav a:hover {
+            background-color: #555;
+            border-radius: 4px;
+        }
+        
+        #section {
+            padding: 2rem;
+            background-color: #f5f5f5;
+        }
+        
+        #footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
         }
     </style>
 </head>
 <body>
-    <a href="second.html" class="top-left-link">Toiselle sivulle</a>
-    <h1>Tervetuloa etusivulle</h1>
-    <p>Tämä on index.html-sivu</p>
-    <h1 class="header-example">Nyt kokeillaan eri juttuja!</h1>
-    <p class="color-example">Nyt kokeillaan vähän nettisivujen ehostamista</p>
-    <ul class="list-example">
-        <li>värit: väreillä saat nettisivun hienommaksi</li>
-        <li>fontit: fontit tekevät nettisivusta luettavan</li>
-        <li>kuvat: kuva on mukava lisä nettisivulle</li>
-    </ul>
-    <p class="text-example">Tämä on muotoiltu teksti esimerkki</p>
-    <div class="div-example">
-        Hyvä kotisivu syntyy kun käytät tilanteeseen sopivaa fonttia, värejä sekä kuvia
-    </div>
+    <header id="header">
+        <h1>Oma Kotisivubi</h1>
+    </header>
+
+    <nav id="nav">
+        <ul>
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="second.html">Toinen sivu</a></li>
+        </ul>
+    </nav>
+
+    <section id="section">
+        <h2>Tervetuloa sivustolleni</h2>
+        <p>Tämä on vähän paranettu versio edellisestä verkkosivusta.</p>
+        
+        <h3>Lista harrastuksistani</h3>
+        <ul>
+            <li>Pelaaminen</li>
+            <li>Lukeminen</li>
+            <li>Nukkuminen</li>
+        </ul>
+        
+        <p>Tässä pikaisesti tämmöistä.</p>
+    </section>
+
+    <footer id="footer">
+        <p>&copy; 2025 Minä vaa</p>
+    </footer>
 </body>
 </html>
