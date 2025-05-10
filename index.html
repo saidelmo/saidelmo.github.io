@@ -1,96 +1,158 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saidin nettisivu</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: grid;
-            min-height: 100vh;
-            grid-template-rows: auto auto 1fr auto;
-        }
-        
-        #header {
-            background-color: #4a6fa5;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        
-        #nav {
-            background-color: #333;
-            padding: 0.5rem;
-        }
-        
-        #nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        
-        #nav li {
-            margin: 0 1rem;
-        }
-        
-        #nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-        }
-        
-        #nav a:hover {
-            background-color: #555;
-            border-radius: 4px;
-        }
-        
-        #section {
-            padding: 2rem;
-            background-color: #f5f5f5;
-        }
-        
-        #footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-    </style>
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.8;
+    }
+    .bg-1 {
+      background-color: #1abc9c;
+      color: #ffffff;
+    }
+    .bg-2 {
+      background-color: #474e5d;
+      color: #ffffff;
+    }
+    .bg-3 {
+      background-color: #ffffff;
+      color: #555555;
+    }
+    .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+    .margin {
+      margin-bottom: 45px;
+    }
+    
+    /* Custom Navbar Styles */
+    .navbar {
+      background-color: #2d2d30;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      letter-spacing: 3px;
+      font-size: 14px;
+      transition: all 0.5s;
+    }
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .navbar-nav li a {
+      color: #d5d5d5 !important;
+      transition: all 0.3s;
+    }
+    .navbar-nav li a:hover {
+      color: #1abc9c !important;
+      transform: translateY(-2px);
+    }
+    .navbar-nav li.active a {
+      color: #1abc9c !important;
+      background-color: transparent !important;
+    }
+    .navbar-default .navbar-toggle {
+      border-color: transparent;
+    }
+    .navbar-toggle:hover {
+      background-color: #1abc9c !important;
+    }
+    
+    /* Footer Styles */
+    footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px 0;
+      text-align: center;
+    }
+    footer p {
+      margin: 0;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+    footer a {
+      color: #1abc9c;
+      transition: all 0.3s;
+    }
+    footer a:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-    <header id="header">
-        <h1>Oma Kotisivubi</h1>
-    </header>
 
-    <nav id="nav">
-        <ul>
-            <li><a href="index.html">Etusivu</a></li>
-            <li><a href="second.html">Toinen sivu</a></li>
-        </ul>
-    </nav>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">ME</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#who">WHO</a></li>
+        <li><a href="#what">WHAT</a></li>
+        <li><a href="#where">WHERE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <section id="section">
-        <h2>Tervetuloa sivustolleni</h2>
-        <p>Tämä on vähän paranettu versio edellisestä verkkosivusta.</p>
-        
-        <h3>Lista harrastuksistani</h3>
-        <ul>
-            <li>Pelaaminen</li>
-            <li>Lukeminen</li>
-            <li>Nukkuminen</li>
-        </ul>
-        
-        <p>Tässä pikaisesti tämmöistä.</p>
-    </section>
+<div id="who" class="container-fluid bg-1 text-center margin">
+  <h3>Who Am I?</h3>
+  <img src="https://media.istockphoto.com/id/965307792/photo/chimpanzee-face.jpg?s=612x612&w=0&k=20&c=ubJK1XiTVeoM4u0t2c-L-CpFAEdiRa4dfXfmbpj4ubo=" 
+       class="img-responsive img-circle" 
+       style="display:inline" 
+       alt="Kaksoiolento">
+  <h3>Ei ole ihan minä, mutta hieman samaa näköä</h3>
+</div>
 
-    <footer id="footer">
-        <p>&copy; 2025 Minä vaa</p>
-    </footer>
+<div id="what" class="container-fluid bg-2 text-center margin">
+  <h3>What Am I?</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <a href="#" class="btn btn-default btn-lg">Search</a>
+</div>
+  
+<div class="container-fluid bg-3 text-center margin">
+  <h3>Pööö</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+
+<div id="where" class="container-fluid bg-3 text-center">
+  <h3>Where To Find Me?</h3>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Lorem ipsum dolor sit amet</p>
+      <img src="https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-06/British%20Shorthair.1.jpg?h=adbf13f6&itok=qB4A9DeS" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4">
+      <p>Consectetur adipiscing elit</p>
+      <img src="https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-06/British%20Shorthair.2.jpg?h=59e70545&itok=riJJtjDf" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4">
+      <p>Sed do eiusmod tempor</p>
+      <img src="https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-06/British-Shorthair.jpg?itok=eFXNhiXz" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Said 2025 yoyoyo</p>
+</footer>
+
 </body>
 </html>
